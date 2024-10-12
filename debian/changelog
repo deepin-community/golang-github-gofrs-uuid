@@ -1,5 +1,75 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-gofrs-uuid (5.3.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Mathias Gibbens <gibmat@debian.org>  Sat, 17 Aug 2024 15:02:13 +0000
+
+golang-github-gofrs-uuid (5.2.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update package description in d/control
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sat, 25 May 2024 12:40:01 +0000
+
+golang-github-gofrs-uuid (5.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update Standards-Version to 4.7.0 in d/control (no changes needed)
+  * Update years in d/copyright
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sun, 21 Apr 2024 13:36:57 +0000
+
+golang-github-gofrs-uuid (5.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update Standards-Version to 4.6.2 in d/control (no changes needed)
+  * Update years in d/copyright
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sun, 18 Jun 2023 16:28:08 +0000
+
+golang-github-gofrs-uuid (4.3.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sat, 26 Nov 2022 03:05:47 +0000
+
+golang-github-gofrs-uuid (4.3.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/control:
+    - Update Standards-Version (no changes needed)
+    - Update my email address
+
+ -- Mathias Gibbens <gibmat@debian.org>  Fri, 28 Oct 2022 22:28:25 +0000
+
+golang-github-gofrs-uuid (4.2.0-1) unstable; urgency=medium
+
+  [ Aloïs Micard ]
+  * update debian/gitlab-ci.yml (using pkg-go-tools/ci-config)
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints
+
+  [ Mathias Gibbens ]
+  * New upstream release
+  * Add myself to Uploaders
+  * Update d/control
+    - Update Section to golang
+    - Update Build-Depends
+    - Update Standards-Version (no changes needed)
+  * Remove unneeded Files-Excluded from d/copyright
+  * Add d/upstream/metadata
+
+ -- Mathias Gibbens <mathias@calenhad.com>  Mon, 17 Jan 2022 18:32:03 +0100
+
+golang-github-gofrs-uuid (3.2.0-2) unstable; urgency=medium
+
+  * Standards-Version: 4.4.1
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 01 Dec 2019 04:58:35 +1100
+
+golang-github-gofrs-uuid (3.2.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #944463).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 10 Nov 2019 23:59:12 +1100

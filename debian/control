@@ -1,15 +1,36 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-gofrs-uuid
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders:
+ Dmitry Smirnov <onlyjob@debian.org>,
+ Mathias Gibbens <gibmat@debian.org>
+Section: golang
+Testsuite: autopkgtest-pkg-go
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-golang,
+ golang-any
+Standards-Version: 4.7.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-gofrs-uuid
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-gofrs-uuid.git
+Homepage: https://github.com/gofrs/uuid
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/gofrs/uuid
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-gofrs-uuid-dev
+Architecture: all
+Depends:
+ ${misc:Depends},
+Multi-Arch: foreign
+Description: UUID library for Golang
+ This library provides a pure Golang implementation of Universally Unique
+ Identifiers (UUID) variant as defined in RFC-9562. This package supports
+ both the creation and parsing of UUIDs in different formats.
+ .
+ The library supports the following UUID versions:
+  * Version 1, based on timestamp and MAC address
+  * Version 3, based on MD5 hashing of a named value
+  * Version 4, based on random numbers
+  * Version 5, based on SHA-1 hashing of a named value
+  * Version 6, a k-sortable id based on timestamp, and field-compatible with v1
+  * Version 7, a k-sortable id based on timestamp
